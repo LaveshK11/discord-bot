@@ -1,5 +1,6 @@
 import { client } from "../configuration/bot.js";
 import studentSchema from "../modal/Students.js";
+
 const messageReaction = async (message) => {
     try {
         let result = await studentSchema.findOneAndUpdate({ email: message.content }, { $set: { inCommunity: true, verified: true } });
