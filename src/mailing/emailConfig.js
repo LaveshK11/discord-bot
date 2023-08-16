@@ -20,7 +20,6 @@ const emailConfig = async ()=>{
                     pass: 'rtijsgcajktcbxva'
                 }
             });
-            
             const mailOptions = {
                 from: 'laveshkhairajani01@gmail.com',
                 to:await getstudentDetails(),
